@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project CPSC-1045</title>
+    <script src="moles.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- The name of the game -->
+    <h1>The Moles</h1>
+    <!-- Game description for the player -->
+    <h3>Are you fast enough to catch all the moles? Challenge yourself with this funny game!</h3>
+    <p>As you see that a mole appeared from under the ground, click on it as fast as you can! Play with friends and compare your scores!</p>
+    <!-- Background music -->
+    <audio controls autoplay>
+        <source src="design/fun-background.mp3" type="audio/mp3">
+        <source src="design/fun-background.ogg" type="audio/ogg">
+        <a href="design/fun-background.mp3">Download the Audio File</a>
+    </audio><br><br>
+    <!-- Current level and score of the player that are updated on the go -->
+    <p style="display: inline">Level:</p>
+    <p id="level" style="display: inline"></p>&nbsp;&nbsp;&nbsp;
+    <p style="display: inline">Score:</p>
+    <p id="score" style="display: inline"></p><br>
+    <!-- The field of the game -->
+    <canvas id="myCanvas" width="600" height="400"></canvas>
+    <!-- The button to start the game -->
+    <input type="button" value="Start" id="buttonStart">
+    <!-- The table (scoreboard) that shows all the players' final scores. If someone plays for the second time or more,
+    the highest score is shown. -->
+    <table id="scoreboard">
+        <tr>
+            <th width="110">Username</th>
+            <th width="80">Score</th>
+        </tr>
+    </table>
+</body>
+</html>
